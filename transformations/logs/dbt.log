@@ -1,0 +1,947 @@
+[0m19:37:11.934626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E43147BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E43627260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E43A424B0>]}
+
+
+============================== 19:37:11.940462 | b6f195ac-2c0f-4d53-b0dd-b7ca46fb3bdf ==============================
+[0m19:37:11.940462 [info ] [MainThread]: Running with dbt=1.5.11
+[0m19:37:11.941458 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:37:11.974921 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'schema' is a required property
+[0m19:37:11.976920 [debug] [MainThread]: Command `dbt run` failed at 19:37:11.976920 after 0.12 seconds
+[0m19:37:11.977962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E3DC5DC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E439BA840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025E438F5370>]}
+[0m19:37:11.978966 [debug] [MainThread]: Flushing usage events
+[0m19:40:06.635681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FDBB2840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FD997860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FDA026F0>]}
+
+
+============================== 19:40:06.642753 | 73435850-f7b0-4d1d-8e8d-df28f220a7ca ==============================
+[0m19:40:06.642753 [info ] [MainThread]: Running with dbt=1.5.11
+[0m19:40:06.643750 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:40:06.690182 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'schemas_and_paths' is a required property
+[0m19:40:06.692171 [debug] [MainThread]: Command `dbt run` failed at 19:40:06.692171 after 0.16 seconds
+[0m19:40:06.692171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FD997320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FDA74320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1FD814D70>]}
+[0m19:40:06.693173 [debug] [MainThread]: Flushing usage events
+[0m19:41:17.337836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C7902F00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C7903C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C7903200>]}
+
+
+============================== 19:41:17.343046 | a780dcc8-e78b-4e8d-8167-24bc40622b20 ==============================
+[0m19:41:17.343046 [info ] [MainThread]: Running with dbt=1.5.11
+[0m19:41:17.344039 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:41:17.377921 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'schema_directory' is a required property
+[0m19:41:17.379940 [debug] [MainThread]: Command `dbt run` failed at 19:41:17.379940 after 0.16 seconds
+[0m19:41:17.379940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C76E7FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C794C110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140C7902F00>]}
+[0m19:41:17.380936 [debug] [MainThread]: Flushing usage events
+[0m19:42:47.520643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4E7DF6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4EA73140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4EA72F00>]}
+
+
+============================== 19:42:47.525623 | a70cb802-e09d-4200-a062-e1e8e2036937 ==============================
+[0m19:42:47.525623 [info ] [MainThread]: Running with dbt=1.5.11
+[0m19:42:47.526619 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:42:47.559248 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: [{'path': 'main'}] is not of type 'object'
+[0m19:42:47.561240 [debug] [MainThread]: Command `dbt run` failed at 19:42:47.561240 after 0.16 seconds
+[0m19:42:47.561240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4E786480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4E69D280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A4EA728D0>]}
+[0m19:42:47.562244 [debug] [MainThread]: Flushing usage events
+[0m20:15:27.290367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDBDBB0EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDBA52B020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDC02925A0>]}
+
+
+============================== 20:15:27.299522 | 18d5e263-f370-45fb-a50e-1be46044dfa9 ==============================
+[0m20:15:27.299522 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:15:27.300521 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:15:27.350162 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: [{'path': 'main'}] is not of type 'object'
+[0m20:15:27.352158 [debug] [MainThread]: Command `dbt run` failed at 20:15:27.352158 after 0.16 seconds
+[0m20:15:27.352158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDC01C9850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDC02DA690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDC0107FE0>]}
+[0m20:15:27.353158 [debug] [MainThread]: Flushing usage events
+[0m20:18:27.999180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F2E1F1970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F2A2FDC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F302728A0>]}
+
+
+============================== 20:18:28.004356 | 62a80dfc-6638-4c3f-aac5-a3d92fad1a32 ==============================
+[0m20:18:28.004356 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:18:28.005351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:18:28.043098 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'main :{}' is not of type 'object'
+[0m20:18:28.044093 [debug] [MainThread]: Command `dbt run` failed at 20:18:28.044093 after 0.17 seconds
+[0m20:18:28.045095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F2E1A8470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F302C0D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023F30299460>]}
+[0m20:18:28.045633 [debug] [MainThread]: Flushing usage events
+[0m20:20:40.049404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026127A4D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129A726F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129DB29F0>]}
+
+
+============================== 20:20:40.053397 | e390e4c5-480f-4d63-bd9a-fd703ecb9366 ==============================
+[0m20:20:40.053397 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:20:40.054904 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:20:40.089613 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'schemas_and_paths' is a required property
+[0m20:20:40.091607 [debug] [MainThread]: Command `dbt run` failed at 20:20:40.090610 after 0.13 seconds
+[0m20:20:40.091607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000261293A6480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129783A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026129DDB770>]}
+[0m20:20:40.092604 [debug] [MainThread]: Flushing usage events
+[0m20:26:08.744732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B995382960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B995381550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B995383140>]}
+
+
+============================== 20:26:08.749970 | cc37ca83-b020-4609-b14b-d997eda03d55 ==============================
+[0m20:26:08.749970 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:26:08.750747 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:26:08.784787 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "sqlite", target "dev" invalid: 'schemas_and_paths' is a required property
+[0m20:26:08.786062 [debug] [MainThread]: Command `dbt run` failed at 20:26:08.786062 after 0.13 seconds
+[0m20:26:08.787069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B995126990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B995383EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9953ACEF0>]}
+[0m20:26:08.787069 [debug] [MainThread]: Flushing usage events
+[0m20:37:18.231938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F382960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F383140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F382F00>]}
+
+
+============================== 20:37:18.237512 | d07eb966-1f9b-43a7-a4b4-618aadcfdd2b ==============================
+[0m20:37:18.237512 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:37:18.238507 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:37:18.287791 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m20:37:18.288992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842E8210A0>]}
+[0m20:37:18.314829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F03D340>]}
+[0m20:37:18.336936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F3FFEC0>]}
+[0m20:37:18.338930 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m20:37:18.356301 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m20:37:18.360193 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:37:18.361191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F3829C0>]}
+[0m20:37:19.072772 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m20:37:19.158154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F53C620>]}
+[0m20:37:19.164919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F53C3E0>]}
+[0m20:37:19.166332 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:37:19.167329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd07eb966-1f9b-43a7-a4b4-618aadcfdd2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F53EE70>]}
+[0m20:37:19.169365 [info ] [MainThread]: 
+[0m20:37:19.169600 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m20:37:19.171596 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_/c/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m20:37:19.185279 [debug] [ThreadPool]: Using sqlite connection "list_/c/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m20:37:19.185279 [debug] [ThreadPool]: On list_/c/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m20:37:19.185279 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:37:19.186730 [debug] [ThreadPool]: On list_/c/Users/91940/Documents/Trade_buddy/data/stock_data.db: No close available on handle
+[0m20:37:19.187711 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:37:19.188664 [debug] [MainThread]: Connection 'list_/c/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m20:37:19.188664 [info ] [MainThread]: 
+[0m20:37:19.189661 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[0m20:37:19.190657 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Runtime Error
+    Database Error
+      unable to open database file
+[0m20:37:19.192651 [debug] [MainThread]: Command `dbt run` failed at 20:37:19.192651 after 1.08 seconds
+[0m20:37:19.192651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F097560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F3C95E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001842F3FFDA0>]}
+[0m20:37:19.194155 [debug] [MainThread]: Flushing usage events
+[0m20:58:38.373583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361ED62960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361ED63140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361ED62F00>]}
+
+
+============================== 20:58:38.379828 | 7a8443d1-b17f-47ec-9859-04d971622991 ==============================
+[0m20:58:38.379828 [info ] [MainThread]: Running with dbt=1.5.11
+[0m20:58:38.380832 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:58:38.439800 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m20:58:38.440794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361ED63500>]}
+[0m20:58:38.465830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361EC25280>]}
+[0m20:58:38.487719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361EDCF050>]}
+[0m20:58:38.488716 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m20:58:38.504270 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m20:58:38.531451 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m20:58:38.533442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361EC96FF0>]}
+[0m20:58:39.259197 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m20:58:39.315283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361E2A11C0>]}
+[0m20:58:39.323258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361EFB7140>]}
+[0m20:58:39.323258 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:58:39.324350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361EC52840>]}
+[0m20:58:39.325754 [info ] [MainThread]: 
+[0m20:58:39.327782 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m20:58:39.329782 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m20:58:39.344325 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m20:58:39.344325 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m20:58:39.345514 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:58:39.347503 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m20:58:39.347503 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m20:58:39.348800 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m20:58:39.351800 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m20:58:39.353310 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m20:58:39.355360 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m20:58:39.356363 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m20:58:39.369788 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m20:58:39.369788 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m20:58:39.370784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:58:39.371782 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m20:58:39.371782 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m20:58:39.371782 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m20:58:39.371782 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m20:58:39.374319 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m20:58:39.375316 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m20:58:39.377313 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m20:58:39.379525 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m20:58:39.380526 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m20:58:39.381519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361E461880>]}
+[0m20:58:39.382516 [debug] [MainThread]: Using sqlite connection "master"
+[0m20:58:39.382516 [debug] [MainThread]: On master: BEGIN
+[0m20:58:39.383512 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:58:39.384023 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m20:58:39.384023 [debug] [MainThread]: On master: COMMIT
+[0m20:58:39.385348 [debug] [MainThread]: Using sqlite connection "master"
+[0m20:58:39.385348 [debug] [MainThread]: On master: COMMIT
+[0m20:58:39.386361 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m20:58:39.386361 [debug] [MainThread]: On master: Close
+[0m20:58:39.387358 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:58:39.388336 [info ] [MainThread]: 
+[0m20:58:39.396590 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m20:58:39.397594 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m20:58:39.398581 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m20:58:39.399578 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m20:58:39.408059 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m20:58:39.410308 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 20:58:39.399578 => 20:58:39.410308
+[0m20:58:39.412302 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m20:58:39.437085 [debug] [Thread-1 (]: Writing runtime sql for node "model.transformations.stock_data_transformed"
+[0m20:58:39.439223 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m20:58:39.440221 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: BEGIN
+[0m20:58:39.440221 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:58:39.441218 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m20:58:39.441218 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m20:58:39.442219 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "node_id": "model.transformations.stock_data_transformed"} */
+
+    
+    create view main."stock_data_transformed" as
+    -- models/stock_data_transformed.sql
+
+with stock_data as (
+    select
+        ticker,
+        date_time,
+        close_price,
+        volume
+    from stock_data
+)
+
+select
+    ticker,
+    date_time,
+    close_price,
+    volume
+from stock_data
+where date_time >= date('now', '-7 days')  -- Example: last 7 days;
+[0m20:58:39.446467 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m20:58:39.453130 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: COMMIT
+[0m20:58:39.454161 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m20:58:39.454161 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: COMMIT
+[0m20:58:39.456428 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m20:58:39.458415 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 20:58:39.413298 => 20:58:39.457417
+[0m20:58:39.458415 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: Close
+[0m20:58:39.459630 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7a8443d1-b17f-47ec-9859-04d971622991', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361CD5D970>]}
+[0m20:58:39.460629 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stock_data_transformed ................... [[32mOK[0m in 0.06s]
+[0m20:58:39.462215 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m20:58:39.464261 [debug] [MainThread]: Using sqlite connection "master"
+[0m20:58:39.464261 [debug] [MainThread]: On master: BEGIN
+[0m20:58:39.465260 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:58:39.467261 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m20:58:39.468257 [debug] [MainThread]: On master: COMMIT
+[0m20:58:39.468257 [debug] [MainThread]: Using sqlite connection "master"
+[0m20:58:39.468257 [debug] [MainThread]: On master: COMMIT
+[0m20:58:39.469253 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m20:58:39.469253 [debug] [MainThread]: On master: Close
+[0m20:58:39.470250 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:58:39.470250 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m20:58:39.470250 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m20:58:39.471246 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m20:58:39.471246 [info ] [MainThread]: 
+[0m20:58:39.472240 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.14 seconds (0.14s).
+[0m20:58:39.473753 [debug] [MainThread]: Command end result
+[0m20:58:39.481732 [info ] [MainThread]: 
+[0m20:58:39.483239 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:58:39.484262 [info ] [MainThread]: 
+[0m20:58:39.485265 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m20:58:39.486274 [debug] [MainThread]: Command `dbt run` succeeded at 20:58:39.486274 after 1.23 seconds
+[0m20:58:39.486274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361C608BF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361E936780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002361E31E540>]}
+[0m20:58:39.487273 [debug] [MainThread]: Flushing usage events
+[0m21:06:12.971695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF212F00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CEED26F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF213140>]}
+
+
+============================== 21:06:12.977248 | ee05d62b-e0fa-4722-965d-126100613fa0 ==============================
+[0m21:06:12.977248 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:06:12.978250 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:06:13.023176 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:06:13.024612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CEFF98B0>]}
+[0m21:06:13.046099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF146C60>]}
+[0m21:06:13.066126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF213650>]}
+[0m21:06:13.067124 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:06:13.082868 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:06:13.178257 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:06:13.179256 [debug] [MainThread]: Partial parsing: updated file: transformations://models\stock_data_transformed.sql
+[0m21:06:13.206483 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m21:06:13.230443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF341D00>]}
+[0m21:06:13.236302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF366D80>]}
+[0m21:06:13.236302 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:06:13.237316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF366C60>]}
+[0m21:06:13.238299 [info ] [MainThread]: 
+[0m21:06:13.239472 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m21:06:13.240818 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m21:06:13.253041 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:06:13.253041 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m21:06:13.254074 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:06:13.255073 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:06:13.255073 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:06:13.256074 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m21:06:13.256074 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:06:13.257071 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m21:06:13.258067 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m21:06:13.260189 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m21:06:13.268277 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:06:13.269517 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m21:06:13.269517 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:06:13.270521 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:06:13.270521 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:06:13.270521 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m21:06:13.271517 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:06:13.273028 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:06:13.273028 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m21:06:13.274057 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:06:13.275068 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m21:06:13.275068 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m21:06:13.277205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF342900>]}
+[0m21:06:13.278213 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:06:13.279209 [debug] [MainThread]: On master: BEGIN
+[0m21:06:13.279209 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:06:13.280199 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:06:13.280199 [debug] [MainThread]: On master: COMMIT
+[0m21:06:13.281196 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:06:13.282632 [debug] [MainThread]: On master: COMMIT
+[0m21:06:13.284162 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:06:13.284162 [debug] [MainThread]: On master: Close
+[0m21:06:13.286362 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:06:13.288427 [info ] [MainThread]: 
+[0m21:06:13.295264 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m21:06:13.296260 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m21:06:13.297257 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m21:06:13.297257 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m21:06:13.304738 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m21:06:13.306735 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 21:06:13.297257 => 21:06:13.305740
+[0m21:06:13.307732 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m21:06:13.317615 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 21:06:13.308735 => 21:06:13.317615
+[0m21:06:13.330231 [debug] [Thread-1 (]: Compilation Error in model stock_data_transformed (models\stock_data_transformed.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+  Searched for: main."stock_data_transformed"
+  Found: "main"."stock_data_transformed"
+  
+  > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+  > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:06:13.331228 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ee05d62b-e0fa-4722-965d-126100613fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CF436A50>]}
+[0m21:06:13.331228 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.stock_data_transformed ............... [[31mERROR[0m in 0.03s]
+[0m21:06:13.332224 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m21:06:13.334428 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:06:13.334428 [debug] [MainThread]: On master: BEGIN
+[0m21:06:13.335425 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:06:13.336422 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:06:13.336422 [debug] [MainThread]: On master: COMMIT
+[0m21:06:13.337535 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:06:13.337535 [debug] [MainThread]: On master: COMMIT
+[0m21:06:13.337535 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:06:13.338537 [debug] [MainThread]: On master: Close
+[0m21:06:13.339533 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:06:13.340530 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m21:06:13.341573 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m21:06:13.341573 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m21:06:13.343081 [info ] [MainThread]: 
+[0m21:06:13.344106 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m21:06:13.345351 [debug] [MainThread]: Command end result
+[0m21:06:13.350581 [info ] [MainThread]: 
+[0m21:06:13.351580 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:06:13.353093 [info ] [MainThread]: 
+[0m21:06:13.354167 [error] [MainThread]: [33mCompilation Error in model stock_data_transformed (models\stock_data_transformed.sql)[0m
+[0m21:06:13.355170 [error] [MainThread]:   When searching for a relation, dbt found an approximate match. Instead of guessing 
+[0m21:06:13.355170 [error] [MainThread]:   which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+[0m21:06:13.356166 [error] [MainThread]:   Searched for: main."stock_data_transformed"
+[0m21:06:13.357162 [error] [MainThread]:   Found: "main"."stock_data_transformed"
+[0m21:06:13.357162 [error] [MainThread]:   
+[0m21:06:13.359157 [error] [MainThread]:   > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+[0m21:06:13.360153 [error] [MainThread]:   > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:06:13.361149 [info ] [MainThread]: 
+[0m21:06:13.363701 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m21:06:13.365708 [debug] [MainThread]: Command `dbt run` failed at 21:06:13.365708 after 0.48 seconds
+[0m21:06:13.365708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CEED26F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228CE7A0FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228C95C3A70>]}
+[0m21:06:13.367063 [debug] [MainThread]: Flushing usage events
+[0m21:07:34.986461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996EC05580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019968DDDC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996ED42AB0>]}
+
+
+============================== 21:07:34.991815 | 5c6661e6-daca-4891-b4d8-2bb83b976cb1 ==============================
+[0m21:07:34.991815 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:07:34.992819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:07:35.037107 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:07:35.038101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996ED43500>]}
+[0m21:07:35.066561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996E9FC320>]}
+[0m21:07:35.094284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996EDAE240>]}
+[0m21:07:35.095303 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:07:35.115516 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:07:35.211869 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:07:35.211869 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:07:35.218385 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996ED942C0>]}
+[0m21:07:35.223917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996EE8DF10>]}
+[0m21:07:35.223917 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:07:35.224999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996E9FD5B0>]}
+[0m21:07:35.226993 [info ] [MainThread]: 
+[0m21:07:35.227996 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m21:07:35.228986 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m21:07:35.241500 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:07:35.241500 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m21:07:35.241500 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:07:35.243004 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:07:35.244032 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:07:35.244032 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m21:07:35.244032 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:07:35.246032 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m21:07:35.247029 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m21:07:35.249233 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m21:07:35.259768 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:07:35.260761 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m21:07:35.260761 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:07:35.261758 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:07:35.261758 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:07:35.262754 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m21:07:35.263261 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:07:35.265457 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:07:35.266448 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m21:07:35.267449 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:07:35.268442 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m21:07:35.268442 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m21:07:35.270668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996ED65070>]}
+[0m21:07:35.270668 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:07:35.270668 [debug] [MainThread]: On master: BEGIN
+[0m21:07:35.271663 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:07:35.272406 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:07:35.272927 [debug] [MainThread]: On master: COMMIT
+[0m21:07:35.272927 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:07:35.272927 [debug] [MainThread]: On master: COMMIT
+[0m21:07:35.273964 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:07:35.273964 [debug] [MainThread]: On master: Close
+[0m21:07:35.275016 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:07:35.276016 [info ] [MainThread]: 
+[0m21:07:35.281455 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m21:07:35.282980 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m21:07:35.284003 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m21:07:35.285001 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m21:07:35.292949 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m21:07:35.296360 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 21:07:35.285001 => 21:07:35.293967
+[0m21:07:35.297357 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m21:07:35.309986 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 21:07:35.297357 => 21:07:35.309986
+[0m21:07:35.319038 [debug] [Thread-1 (]: Compilation Error in model stock_data_transformed (models\stock_data_transformed.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+  Searched for: main."stock_data_transformed"
+  Found: "main"."stock_data_transformed"
+  
+  > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+  > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:07:35.319038 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5c6661e6-daca-4891-b4d8-2bb83b976cb1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996C451D00>]}
+[0m21:07:35.320037 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.stock_data_transformed ............... [[31mERROR[0m in 0.04s]
+[0m21:07:35.321024 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m21:07:35.322021 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:07:35.322021 [debug] [MainThread]: On master: BEGIN
+[0m21:07:35.323026 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:07:35.323550 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:07:35.324725 [debug] [MainThread]: On master: COMMIT
+[0m21:07:35.324725 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:07:35.325758 [debug] [MainThread]: On master: COMMIT
+[0m21:07:35.326762 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:07:35.327760 [debug] [MainThread]: On master: Close
+[0m21:07:35.328759 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:07:35.328759 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m21:07:35.328759 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m21:07:35.329754 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m21:07:35.329754 [info ] [MainThread]: 
+[0m21:07:35.330745 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m21:07:35.331749 [debug] [MainThread]: Command end result
+[0m21:07:35.337165 [info ] [MainThread]: 
+[0m21:07:35.338252 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:07:35.338252 [info ] [MainThread]: 
+[0m21:07:35.339255 [error] [MainThread]: [33mCompilation Error in model stock_data_transformed (models\stock_data_transformed.sql)[0m
+[0m21:07:35.340250 [error] [MainThread]:   When searching for a relation, dbt found an approximate match. Instead of guessing 
+[0m21:07:35.341249 [error] [MainThread]:   which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+[0m21:07:35.341249 [error] [MainThread]:   Searched for: main."stock_data_transformed"
+[0m21:07:35.342808 [error] [MainThread]:   Found: "main"."stock_data_transformed"
+[0m21:07:35.344809 [error] [MainThread]:   
+[0m21:07:35.344809 [error] [MainThread]:   > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+[0m21:07:35.346315 [error] [MainThread]:   > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:07:35.347317 [info ] [MainThread]: 
+[0m21:07:35.348314 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m21:07:35.351311 [debug] [MainThread]: Command `dbt run` failed at 21:07:35.350310 after 0.45 seconds
+[0m21:07:35.351311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996E969490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996EA56C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001996EB25F10>]}
+[0m21:07:35.351311 [debug] [MainThread]: Flushing usage events
+[0m21:08:08.118364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E4F50DC70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55402900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55402870>]}
+
+
+============================== 21:08:08.123071 | 0479f609-32d1-48b9-89cc-0136059c0bb7 ==============================
+[0m21:08:08.123071 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:08:08.124108 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:08:08.170193 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:08:08.171193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55403500>]}
+[0m21:08:08.198658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E4F50DC70>]}
+[0m21:08:08.221237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E4F50E090>]}
+[0m21:08:08.223767 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:08:08.241759 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:08:08.323076 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:08:08.323076 [debug] [MainThread]: Partial parsing: updated file: transformations://models\stock_data_transformed.sql
+[0m21:08:08.348382 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m21:08:08.371648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55507DD0>]}
+[0m21:08:08.377236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55546EA0>]}
+[0m21:08:08.378234 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:08:08.378234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55546D50>]}
+[0m21:08:08.380410 [info ] [MainThread]: 
+[0m21:08:08.381407 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m21:08:08.381407 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m21:08:08.394821 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:08:08.394821 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m21:08:08.395823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:08.396824 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:08:08.396824 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:08:08.396824 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m21:08:08.397816 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:08:08.399996 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m21:08:08.399996 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m21:08:08.402990 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m21:08:08.414033 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:08:08.414033 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m21:08:08.415051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:08.416051 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:08:08.416051 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:08:08.416051 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m21:08:08.417048 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:08:08.418044 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:08:08.419041 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m21:08:08.419270 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:08:08.421263 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m21:08:08.421263 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m21:08:08.423792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55028200>]}
+[0m21:08:08.424975 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:08:08.424975 [debug] [MainThread]: On master: BEGIN
+[0m21:08:08.425977 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:08:08.426979 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:08:08.426979 [debug] [MainThread]: On master: COMMIT
+[0m21:08:08.427980 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:08:08.428969 [debug] [MainThread]: On master: COMMIT
+[0m21:08:08.428969 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:08:08.428969 [debug] [MainThread]: On master: Close
+[0m21:08:08.430153 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:08:08.431157 [info ] [MainThread]: 
+[0m21:08:08.437564 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m21:08:08.438560 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m21:08:08.441038 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m21:08:08.441038 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m21:08:08.448073 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m21:08:08.449306 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 21:08:08.441038 => 21:08:08.449132
+[0m21:08:08.449306 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m21:08:08.460195 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 21:08:08.450304 => 21:08:08.460195
+[0m21:08:08.467230 [debug] [Thread-1 (]: Compilation Error in model stock_data_transformed (models\stock_data_transformed.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+  Searched for: main."stock_data_transformed"
+  Found: "main"."stock_data_transformed"
+  
+  > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+  > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:08:08.467230 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0479f609-32d1-48b9-89cc-0136059c0bb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E550EC830>]}
+[0m21:08:08.468226 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.stock_data_transformed ............... [[31mERROR[0m in 0.03s]
+[0m21:08:08.469409 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m21:08:08.471403 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:08:08.472995 [debug] [MainThread]: On master: BEGIN
+[0m21:08:08.473991 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:08:08.474988 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:08:08.475984 [debug] [MainThread]: On master: COMMIT
+[0m21:08:08.475984 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:08:08.476980 [debug] [MainThread]: On master: COMMIT
+[0m21:08:08.476980 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:08:08.477977 [debug] [MainThread]: On master: Close
+[0m21:08:08.479200 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:08:08.480188 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m21:08:08.480188 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m21:08:08.481190 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m21:08:08.481190 [info ] [MainThread]: 
+[0m21:08:08.482180 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m21:08:08.483177 [debug] [MainThread]: Command end result
+[0m21:08:08.490477 [info ] [MainThread]: 
+[0m21:08:08.491469 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:08:08.492975 [info ] [MainThread]: 
+[0m21:08:08.493990 [error] [MainThread]: [33mCompilation Error in model stock_data_transformed (models\stock_data_transformed.sql)[0m
+[0m21:08:08.494988 [error] [MainThread]:   When searching for a relation, dbt found an approximate match. Instead of guessing 
+[0m21:08:08.495991 [error] [MainThread]:   which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+[0m21:08:08.496985 [error] [MainThread]:   Searched for: main."stock_data_transformed"
+[0m21:08:08.497982 [error] [MainThread]:   Found: "main"."stock_data_transformed"
+[0m21:08:08.497982 [error] [MainThread]:   
+[0m21:08:08.499166 [error] [MainThread]:   > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+[0m21:08:08.499166 [error] [MainThread]:   > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:08:08.500163 [info ] [MainThread]: 
+[0m21:08:08.501160 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m21:08:08.501160 [debug] [MainThread]: Command `dbt run` failed at 21:08:08.501160 after 0.45 seconds
+[0m21:08:08.502157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E54B51DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E54FD3C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E55449370>]}
+[0m21:08:08.503172 [debug] [MainThread]: Flushing usage events
+[0m21:10:08.645124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFBEEC920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFE476B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A80088170>]}
+
+
+============================== 21:10:08.650337 | 672e6c47-5882-4450-85eb-715605a2aea9 ==============================
+[0m21:10:08.650337 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:10:08.651336 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:10:08.701624 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:10:08.702639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A80283500>]}
+[0m21:10:08.728794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFCBAAE0>]}
+[0m21:10:08.751480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFEF78F0>]}
+[0m21:10:08.752985 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:10:08.768001 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:10:08.789445 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m21:10:08.790438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A804B0650>]}
+[0m21:10:09.466538 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m21:10:09.514890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFF6E11C0>]}
+[0m21:10:09.520136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A80504BC0>]}
+[0m21:10:09.521113 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:10:09.521113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFF7B67B0>]}
+[0m21:10:09.522620 [info ] [MainThread]: 
+[0m21:10:09.524795 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m21:10:09.525773 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m21:10:09.537445 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:10:09.538443 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m21:10:09.538443 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:09.539585 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:10:09.540620 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:10:09.540620 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m21:10:09.541616 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:10:09.543119 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m21:10:09.543119 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m21:10:09.545550 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m21:10:09.556708 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:10:09.557701 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m21:10:09.557701 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:10:09.558697 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:10:09.558697 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:10:09.559705 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m21:10:09.559705 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:10:09.561706 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:10:09.561706 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m21:10:09.562704 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:10:09.563230 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m21:10:09.564709 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m21:10:09.565722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFCFE900>]}
+[0m21:10:09.566720 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:10:09.566720 [debug] [MainThread]: On master: BEGIN
+[0m21:10:09.567717 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:10:09.567717 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:10:09.568909 [debug] [MainThread]: On master: COMMIT
+[0m21:10:09.568909 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:10:09.568909 [debug] [MainThread]: On master: COMMIT
+[0m21:10:09.568909 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:10:09.569907 [debug] [MainThread]: On master: Close
+[0m21:10:09.570910 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:10:09.571900 [info ] [MainThread]: 
+[0m21:10:09.579203 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m21:10:09.580200 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m21:10:09.581205 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m21:10:09.582711 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m21:10:09.590307 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m21:10:09.592348 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 21:10:09.582711 => 21:10:09.591843
+[0m21:10:09.592862 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m21:10:09.605824 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 21:10:09.593379 => 21:10:09.604822
+[0m21:10:09.613909 [debug] [Thread-1 (]: Compilation Error in model stock_data_transformed (models\stock_data_transformed.sql)
+  When searching for a relation, dbt found an approximate match. Instead of guessing 
+  which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+  Searched for: main."stock_data_transformed"
+  Found: "main"."stock_data_transformed"
+  
+  > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+  > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:10:09.615080 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '672e6c47-5882-4450-85eb-715605a2aea9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015A8053BE90>]}
+[0m21:10:09.616089 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model main.stock_data_transformed ............... [[31mERROR[0m in 0.03s]
+[0m21:10:09.616089 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m21:10:09.618074 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:10:09.618074 [debug] [MainThread]: On master: BEGIN
+[0m21:10:09.619155 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:10:09.619271 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:10:09.620290 [debug] [MainThread]: On master: COMMIT
+[0m21:10:09.620290 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:10:09.620290 [debug] [MainThread]: On master: COMMIT
+[0m21:10:09.621266 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:10:09.621266 [debug] [MainThread]: On master: Close
+[0m21:10:09.622774 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:10:09.623792 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m21:10:09.624788 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m21:10:09.624788 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m21:10:09.625783 [info ] [MainThread]: 
+[0m21:10:09.626782 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m21:10:09.628780 [debug] [MainThread]: Command end result
+[0m21:10:09.636432 [info ] [MainThread]: 
+[0m21:10:09.637428 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m21:10:09.638423 [info ] [MainThread]: 
+[0m21:10:09.640417 [error] [MainThread]: [33mCompilation Error in model stock_data_transformed (models\stock_data_transformed.sql)[0m
+[0m21:10:09.641413 [error] [MainThread]:   When searching for a relation, dbt found an approximate match. Instead of guessing 
+[0m21:10:09.642919 [error] [MainThread]:   which relation to use, dbt will move on. Please delete "main"."stock_data_transformed", or rename it to be less ambiguous.
+[0m21:10:09.642919 [error] [MainThread]:   Searched for: main."stock_data_transformed"
+[0m21:10:09.643938 [error] [MainThread]:   Found: "main"."stock_data_transformed"
+[0m21:10:09.645218 [error] [MainThread]:   
+[0m21:10:09.647207 [error] [MainThread]:   > in macro materialization_view_sqlite (macros\materializations\view\view.sql)
+[0m21:10:09.648209 [error] [MainThread]:   > called by model stock_data_transformed (models\stock_data_transformed.sql)
+[0m21:10:09.649203 [info ] [MainThread]: 
+[0m21:10:09.651194 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m21:10:09.651194 [debug] [MainThread]: Command `dbt run` failed at 21:10:09.651194 after 1.10 seconds
+[0m21:10:09.652707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFA28B020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFEF7500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015AFFE0D3D0>]}
+[0m21:10:09.652707 [debug] [MainThread]: Flushing usage events
+[0m21:11:39.716831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417A2960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417A38F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417A3140>]}
+
+
+============================== 21:11:39.722010 | 1123d766-2012-4c14-a9d9-6537ace3b3ad ==============================
+[0m21:11:39.722010 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:11:39.723001 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:11:39.766869 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:11:39.768868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417D1A90>]}
+[0m21:11:39.792948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C341692000>]}
+[0m21:11:39.819024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417D1190>]}
+[0m21:11:39.821020 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:11:39.837711 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:11:39.930019 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m21:11:39.930019 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m21:11:39.936075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417D0C50>]}
+[0m21:11:39.941554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C341909700>]}
+[0m21:11:39.942552 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m21:11:39.943644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C341463200>]}
+[0m21:11:39.945070 [info ] [MainThread]: 
+[0m21:11:39.946069 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m21:11:39.947065 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db'
+[0m21:11:39.959068 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:11:39.959262 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: BEGIN
+[0m21:11:39.960258 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:11:39.970131 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:11:39.970131 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"
+[0m21:11:39.971133 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db"} */
+
+        pragma database_list
+    
+[0m21:11:39.971133 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:11:39.972645 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: ROLLBACK
+[0m21:11:39.972645 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db: Close
+[0m21:11:39.975080 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main'
+[0m21:11:39.986976 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:11:39.987973 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: BEGIN
+[0m21:11:39.987973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:11:39.988969 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:11:39.988969 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:11:39.988969 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+        pragma database_list
+    
+[0m21:11:39.990205 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:11:39.991211 [debug] [ThreadPool]: Using sqlite connection "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"
+[0m21:11:39.991211 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "connection_name": "list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main"} */
+
+            SELECT
+                'C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m21:11:39.992781 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m21:11:39.994979 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: ROLLBACK
+[0m21:11:39.995980 [debug] [ThreadPool]: On list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main: Close
+[0m21:11:39.996976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C34180E840>]}
+[0m21:11:39.997974 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:11:39.997974 [debug] [MainThread]: On master: BEGIN
+[0m21:11:39.998970 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:11:39.998970 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:11:40.000166 [debug] [MainThread]: On master: COMMIT
+[0m21:11:40.000166 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:11:40.000166 [debug] [MainThread]: On master: COMMIT
+[0m21:11:40.001162 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:11:40.001162 [debug] [MainThread]: On master: Close
+[0m21:11:40.001162 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:11:40.002692 [info ] [MainThread]: 
+[0m21:11:40.008186 [debug] [Thread-1 (]: Began running node model.transformations.stock_data_transformed
+[0m21:11:40.008186 [info ] [Thread-1 (]: 1 of 1 START sql view model main.stock_data_transformed ........................ [RUN]
+[0m21:11:40.010366 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.transformations.stock_data_transformed'
+[0m21:11:40.010366 [debug] [Thread-1 (]: Began compiling node model.transformations.stock_data_transformed
+[0m21:11:40.018877 [debug] [Thread-1 (]: Writing injected SQL for node "model.transformations.stock_data_transformed"
+[0m21:11:40.020038 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (compile): 21:11:40.010366 => 21:11:40.019874
+[0m21:11:40.021038 [debug] [Thread-1 (]: Began executing node model.transformations.stock_data_transformed
+[0m21:11:40.041039 [debug] [Thread-1 (]: Writing runtime sql for node "model.transformations.stock_data_transformed"
+[0m21:11:40.042558 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m21:11:40.043589 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: BEGIN
+[0m21:11:40.043589 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:11:40.045015 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m21:11:40.046014 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m21:11:40.046014 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "sqlite", "target_name": "dev", "node_id": "model.transformations.stock_data_transformed"} */
+
+    
+    create view main."stock_data_transformed" as
+    -- models/stock_data_transformed.sql
+
+with stock_data as (
+    select
+        ticker,
+        date_time,
+        close_price,
+        volume
+    from stock_data
+)
+
+select
+    ticker,
+    date_time,
+    close_price,
+    volume
+from stock_data
+where date_time >= date('now', '-7 days')  -- Example: last 7 days;
+[0m21:11:40.048004 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m21:11:40.057238 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: COMMIT
+[0m21:11:40.057238 [debug] [Thread-1 (]: Using sqlite connection "model.transformations.stock_data_transformed"
+[0m21:11:40.057238 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: COMMIT
+[0m21:11:40.060402 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m21:11:40.062905 [debug] [Thread-1 (]: Timing info for model.transformations.stock_data_transformed (execute): 21:11:40.021038 => 21:11:40.061398
+[0m21:11:40.063924 [debug] [Thread-1 (]: On model.transformations.stock_data_transformed: Close
+[0m21:11:40.064944 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1123d766-2012-4c14-a9d9-6537ace3b3ad', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3417D0680>]}
+[0m21:11:40.065953 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.stock_data_transformed ................... [[32mOK[0m in 0.06s]
+[0m21:11:40.066944 [debug] [Thread-1 (]: Finished running node model.transformations.stock_data_transformed
+[0m21:11:40.069112 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:11:40.069112 [debug] [MainThread]: On master: BEGIN
+[0m21:11:40.069112 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:11:40.071107 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:11:40.072620 [debug] [MainThread]: On master: COMMIT
+[0m21:11:40.072620 [debug] [MainThread]: Using sqlite connection "master"
+[0m21:11:40.072620 [debug] [MainThread]: On master: COMMIT
+[0m21:11:40.073667 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m21:11:40.073667 [debug] [MainThread]: On master: Close
+[0m21:11:40.074680 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:11:40.074680 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db' was properly closed.
+[0m21:11:40.074680 [debug] [MainThread]: Connection 'list_C:/Users/91940/Documents/Trade_buddy/data/stock_data.db_main' was properly closed.
+[0m21:11:40.075687 [debug] [MainThread]: Connection 'model.transformations.stock_data_transformed' was properly closed.
+[0m21:11:40.075687 [info ] [MainThread]: 
+[0m21:11:40.076677 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m21:11:40.077676 [debug] [MainThread]: Command end result
+[0m21:11:40.084795 [info ] [MainThread]: 
+[0m21:11:40.087155 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:11:40.089593 [info ] [MainThread]: 
+[0m21:11:40.090619 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m21:11:40.091872 [debug] [MainThread]: Command `dbt run` succeeded at 21:11:40.091872 after 0.50 seconds
+[0m21:11:40.092877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C3415B5B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C341461490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C340A766F0>]}
+[0m21:11:40.094900 [debug] [MainThread]: Flushing usage events
+[0m21:14:31.112497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2767FD3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2768EB7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2769B6990>]}
+
+
+============================== 21:14:31.117897 | 70312e8e-f108-402e-a9c3-6a3393ebaaf5 ==============================
+[0m21:14:31.117897 [info ] [MainThread]: Running with dbt=1.5.11
+[0m21:14:31.118895 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\91940\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\91940\\Documents\\Trade_buddy\\transformations\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m21:14:31.166857 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m21:14:31.167853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '70312e8e-f108-402e-a9c3-6a3393ebaaf5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2765846E0>]}
+[0m21:14:31.193890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '70312e8e-f108-402e-a9c3-6a3393ebaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F270ABDC70>]}
+[0m21:14:31.216740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '70312e8e-f108-402e-a9c3-6a3393ebaaf5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2769B6C00>]}
+[0m21:14:31.217739 [info ] [MainThread]: Registered adapter: sqlite=1.5.0
+[0m21:14:31.233820 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m21:14:31.314086 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:14:31.314086 [debug] [MainThread]: Partial parsing: updated file: transformations://models\stock_data_transformed.sql
+[0m21:14:31.347543 [debug] [MainThread]: 1699: static parser successfully parsed stock_data_transformed.sql
+[0m21:14:31.362434 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.transformations.stock_data_transformed' (models\stock_data_transformed.sql) depends on a node named 'stock_data' which was not found
+[0m21:14:31.363453 [debug] [MainThread]: Command `dbt run` failed at 21:14:31.363453 after 0.37 seconds
+[0m21:14:31.364567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2767FDB20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2769B75F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2765F93A0>]}
+[0m21:14:31.364567 [debug] [MainThread]: Flushing usage events
