@@ -62,6 +62,8 @@ def visualize_stock_data(ticker):
     if conn:
         query = f"SELECT date_time, close_price FROM stock_data WHERE ticker='{ticker}'"
         df = pd.read_sql_query(query, conn)
+        print(df.head())
+
         conn.close()
 
         # Convert date_time to datetime for plotting
