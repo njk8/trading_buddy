@@ -1,0 +1,5 @@
+Airflow (windows)
+1. When installing using docker first you need to pull the airflow docker image.
+2. Then use this to get the initial version of the docker compose: curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.2/docker-compose.yaml'
+3. Then initialise the DB where you want : docker compose up airflow-init
+4. Give the corresponsing permissions and create folder for logs like scheduler and gad_processor_mananger : chmod -R 777 ./airflow/logs (not generally recommmended)
