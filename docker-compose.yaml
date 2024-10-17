@@ -19,6 +19,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/dags:/opt/airflow/dags  # Mount your Airflow DAGs
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/logs:/opt/airflow/logs  # Airflow logs
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/plugins:/opt/airflow/plugins  # Any Airflow plugins
+    - .data/processed:/opt/airflow/data  # data
     - ./your_data_pipeline:/opt/airflow/data_pipeline  # Your Python scripts, data files, and configs
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
