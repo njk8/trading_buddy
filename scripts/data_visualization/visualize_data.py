@@ -6,7 +6,7 @@ import time
 
 # Function to fetch stock data from the database
 def fetch_stock_data(ticker):
-    conn = sqlite3.connect('../data/stock_data.db')  # Adjust path as necessary
+    conn = sqlite3.connect('../../data/processed/stock_data.db')  # Adjust path as necessary
     query = f"""
         SELECT date_time, close_price
         FROM stock_data
@@ -54,7 +54,7 @@ def plot_stock_data(ticker):
             else:
                 print(f"No data found for ticker {ticker}")
             
-            plt.pause(60)  # Pause for 60 seconds before updating the plot
+            plt.pause(10)  # Pause for 10 seconds before updating the plot
             
             # Check if the figure is closed, and break the loop
             if not plt.fignum_exists(fig.number):

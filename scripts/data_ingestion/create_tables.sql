@@ -1,4 +1,5 @@
--- Table to store raw stock data
+-- models/create_tables.sql
+
 CREATE TABLE IF NOT EXISTS stock_data (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     ticker TEXT NOT NULL,
@@ -10,7 +11,6 @@ CREATE TABLE IF NOT EXISTS stock_data (
     volume INTEGER NOT NULL
 );
 
--- Table to log trades made by the bot
 CREATE TABLE IF NOT EXISTS trade_log (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     ticker TEXT NOT NULL,

@@ -3,7 +3,7 @@ version: '1.0'
 config-version: 2
 
 profile: 'sqlite'
-source-paths: ['models']
+model-paths: ['models']
 target-path: 'target'
 clean-targets:
   - target

@@ -7,8 +7,9 @@ import matplotlib.pyplot as plt
 
 # Use absolute path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATABASE_PATH = os.path.join(BASE_DIR, '../data/stock_data.db')
-SQL_PATH = os.path.join(BASE_DIR, '../models/create_tables.sql')
+print(BASE_DIR)
+DATABASE_PATH = os.path.join(BASE_DIR, '../../data/processed/stock_data.db')
+SQL_PATH = os.path.join(BASE_DIR, 'create_tables.sql')
 
 
 def create_connection():
@@ -53,6 +54,7 @@ def fetch_and_store_data(ticker):
     # Create a connection and insert data
     conn = create_connection()
     if conn:
+        create_tables(conn)  # Ensure this is called to create the table
         insert_stock_data(conn, stock_data)
         conn.close()
 
