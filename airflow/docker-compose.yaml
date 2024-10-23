@@ -14,14 +14,22 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'  # Don't load the example DAGs
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
+    AIRFLOW__WEBSERVER__BASE_URL: 'http://localhost:8080'
+    AIRFLOW__CORE__DAGBAG_IMPORT_TIMEOUT: 60
+    AIRFLOW__CORE__DAG_FILE_PROCESSOR_TIMEOUT: 300
+    AIRFLOW__SCHEDULER__ZOMBIE_TASK_THRESHOLD: 600
+    AIRFLOW__SCHEDULER__TASK_QUEUED_TIMEOUT: 300
+    AIRFLOW__LOGGING__LOGGING_LEVEL: DEBUG
+    AIRFLOW__LOGGING__CELERY_LOGGING_LEVEL: DEBUG
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags  # Mount your Airflow DAGs
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs  # Airflow logs
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins  # Any Airflow plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/scripts:/opt/airflow/scripts
     - .data/processed:/opt/airflow/data  # data
     - ./your_data_pipeline:/opt/airflow/data_pipeline  # Your Python scripts, data files, and configs
-  user: "${AIRFLOW_UID:-50000}:0"
+  user: "root"
   depends_on:
     &airflow-common-depends-on
     redis:
@@ -62,6 +70,8 @@ services:
     command: webserver
     ports:
       - "8080:8080"
+      - "8793:8793"
+    hostname: "localhost"
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 30s
@@ -92,12 +102,12 @@ services:
   airflow-worker:
     <<: *airflow-common
     command: celery worker
+    mem_limit: 2g  # set a memory limit to 2GB
+    mem_reservation: 1g  # ensure at least 1GB is reserved
     healthcheck:
-      test:
-        - "CMD-SHELL"
-        - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}" || celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
-      interval: 30s
-      timeout: 10s
+      test: ["CMD", "celery", "--app", "airflow.executors.celery_executor.app", "inspect", "ping"]
+      interval: 60s
+      timeout: 20s
       retries: 5
       start_period: 30s
     environment:
@@ -127,7 +137,7 @@ services:
       _AIRFLOW_WWW_USER_CREATE: 'true'
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
       _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
-    user: "0:0"
+    user: "root"
     volumes:
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
 
