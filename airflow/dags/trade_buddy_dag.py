@@ -8,7 +8,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_INGESTION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_ingestion/store_data.py')
 DATA_VISUALIZATION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_visualization/visualize_data.py')
-DBT_RUN_COMMAND = "cd ../transformations && dbt run --select stock_data_transformed"
+DBT_RUN_COMMAND = "cd /opt/airflow/transformations/models && dbt run --select stock_data_transformed"
 
 # Default arguments for the DAG
 default_args = {

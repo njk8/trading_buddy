@@ -1,10 +1,12 @@
-version: '3.7'
 
 x-airflow-common:
   &airflow-common
-  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.10.2}
+  build:  # Replace image with build to use the custom Dockerfile
+    context: .
+    dockerfile: Dockerfile
   environment:
     &airflow-common-env
+    AIRFLOW_UID: 50000
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
@@ -21,12 +23,13 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__TASK_QUEUED_TIMEOUT: 300
     AIRFLOW__LOGGING__LOGGING_LEVEL: DEBUG
     AIRFLOW__LOGGING__CELERY_LOGGING_LEVEL: DEBUG
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+    _PIP_ADDITIONAL_REQUIREMENTS: "${_PIP_ADDITIONAL_REQUIREMENTS:-}"
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags  # Mount your Airflow DAGs
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs  # Airflow logs
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins  # Any Airflow plugins
-    - ${AIRFLOW_PROJ_DIR:-.}/scripts:/opt/airflow/scripts
+    - ${AIRFLOW_PROJ_DIR:-../scripts}:/opt/airflow/scripts
+    - ${AIRFLOW_PROJ_DIR:-../transformations}:/opt/airflow/transformations
     - .data/processed:/opt/airflow/data  # data
     - ./your_data_pipeline:/opt/airflow/data_pipeline  # Your Python scripts, data files, and configs
   user: "root"
