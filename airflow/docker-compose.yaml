@@ -70,7 +70,7 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
-    command: webserver
+    command: ["conda", "run", "-n", "trade", "airflow", "webserver"]
     ports:
       - "8080:8080"
       - "8793:8793"
@@ -89,7 +89,7 @@ services:
 
   airflow-scheduler:
     <<: *airflow-common
-    command: scheduler
+    command: ["conda", "run", "-n", "trade", "airflow", "scheduler"]
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -104,7 +104,7 @@ services:
 
   airflow-worker:
     <<: *airflow-common
-    command: celery worker
+    command: ["conda", "run", "-n", "trade", "airflow", "celery", "worker"]
     mem_limit: 2g  # set a memory limit to 2GB
     mem_reservation: 1g  # ensure at least 1GB is reserved
     healthcheck:
@@ -128,12 +128,23 @@ services:
     command:
       - -c
       - |
-        if [[ -z "${AIRFLOW_UID}" ]]; then
-          echo "AIRFLOW_UID not set!"
-        fi
-        mkdir -p /sources/logs /sources/dags /sources/plugins
-        chown -R "${AIRFLOW_UID}:0" /sources/{logs,dags,plugins}
-        exec /entrypoint airflow version
+        source /opt/conda/etc/profile.d/conda.sh  
+        # Activate the trade environment using the name
+        conda activate /home/airflow/.conda/envs/trade || exit 1
+        conda env export > environment.yml
+        conda env create -n trade -f environment.yml 
+        conda env list
+        conda activate trade || exit 1
+        conda info --envs
+        conda env remove --name /home/airflow/.conda/envs/trade  # Remove the old environment
+        # List environments for debugging
+        conda env list
+        # List installed packages in the trade environment for debugging
+        conda list
+        pip install psycopg2-binary
+        # Initialize the Airflow database
+        conda run -n trade airflow db init
+        
     environment:
       <<: *airflow-common-env
       _AIRFLOW_DB_MIGRATE: 'true'
