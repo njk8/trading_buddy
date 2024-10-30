@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y wget \
 # Switch back to the airflow user
 USER airflow
 
+# Set the user and environment variables
+ENV AIRFLOW_UID=50000
+
 # Add Conda to PATH
 ENV PATH=/opt/conda/bin:$PATH
 
@@ -24,11 +27,12 @@ COPY env_nobuild.yml /opt/airflow/environment.yml
 RUN conda env create -f /opt/airflow/environment.yml || { echo "Conda environment creation failed"; exit 1; } \
     && conda clean -afy
 
-# Set the user and environment variables
-ENV AIRFLOW_UID=50000
-
 # Switch to the non-root user
 USER airflow
+
+# Activate the Conda environment in subsequent layers
+RUN echo "source activate trade" >> ~/.bashrc
+SHELL ["/bin/bash", "-c"]
 
 # Activate the Conda environment and set it as the default
 #RUN conda activate trade
@@ -37,13 +41,15 @@ SHELL ["conda", "run", "-n", "trade", "/bin/bash", "-c"]
 
 RUN pip install urllib3
 
+# Add this line to check the installed packages after creating the environment
+RUN conda list -n trade
+
 # Set the environment variable to match your setup
 ENV AIRFLOW_UID=50000
 ENV AIRFLOW__CORE__EXECUTOR=CeleryExecutor
 ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
 ENV AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://airflow:airflow@postgres/airflow
 ENV AIRFLOW__CELERY__BROKER_URL=redis://:@redis:6379/0
-ENV AIRFLOW__CORE__FERNET_KEY=''
 ENV AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=false
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=false
 ENV AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK=true
@@ -54,3 +60,8 @@ ENV AIRFLOW__SCHEDULER__ZOMBIE_TASK_THRESHOLD=600
 ENV AIRFLOW__SCHEDULER__TASK_QUEUED_TIMEOUT=300
 ENV AIRFLOW__LOGGING__LOGGING_LEVEL=DEBUG
 ENV AIRFLOW__LOGGING__CELERY_LOGGING_LEVEL=DEBUG
+
+
+# Set up Python version and check it
+RUN which python
+RUN python -V
