@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y wget \
     && /opt/conda/bin/conda clean -ya
 
 # Switch back to the airflow user
-USER airflow
+#USER airflow
 
 # Set the user and environment variables
 ENV AIRFLOW_UID=50000
@@ -27,11 +27,11 @@ COPY env_nobuild.yml /opt/airflow/environment.yml
 RUN conda env create -f /opt/airflow/environment.yml || { echo "Conda environment creation failed"; exit 1; } \
     && conda clean -afy
 
-# Switch to the non-root user
-USER airflow
-
 # Activate the Conda environment in subsequent layers
-RUN echo "source activate trade" >> ~/.bashrc
+RUN echo "source activate trade " >> ~/.bashrc \
+    && echo "conda activate trade" >> ~/.bashrc
+
+# Use bash as the default shell
 SHELL ["/bin/bash", "-c"]
 
 # Activate the Conda environment and set it as the default
@@ -39,7 +39,8 @@ SHELL ["/bin/bash", "-c"]
 SHELL ["conda", "run", "-n", "trade", "/bin/bash", "-c"]
 # Replace 'your_environment_name' with the name specified in your environment.yml file.
 
-RUN pip install urllib3
+# Switch to the non-root user
+#USER airflow
 
 # Add this line to check the installed packages after creating the environment
 RUN conda list -n trade

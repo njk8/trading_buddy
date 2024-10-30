@@ -128,20 +128,13 @@ services:
     command:
       - -c
       - |
-        source /opt/conda/etc/profile.d/conda.sh  
-        # Activate the trade environment using the name
-        conda activate /home/airflow/.conda/envs/trade || exit 1
-        conda env export > environment.yml
-        conda env create -n trade -f environment.yml 
         conda env list
+        source /opt/conda/etc/profile.d/conda.sh  
         conda activate trade || exit 1
-        conda info --envs
-        conda env remove --name /home/airflow/.conda/envs/trade  # Remove the old environment
         # List environments for debugging
         conda env list
         # List installed packages in the trade environment for debugging
         conda list
-        pip install psycopg2-binary
         # Initialize the Airflow database
         conda run -n trade airflow db init
         

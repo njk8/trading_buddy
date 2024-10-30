@@ -115,6 +115,7 @@ dependencies:
   - zlib=1.2.13
   - zstd=1.5.5
   - pip:
+    - psycopg2-binary
     - agate==1.7.0
     - urllib3==2.2.3
     - aiohappyeyeballs==2.4.3
