@@ -6,6 +6,7 @@ import os
 
 # Define the base directory for paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+print(BASE_DIR)
 DATA_INGESTION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_ingestion/store_data.py')
 DATA_VISUALIZATION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_visualization/visualize_data.py')
 DBT_RUN_COMMAND = "cd ../transformations && dbt run --select stock_data_transformed"
@@ -31,6 +32,13 @@ dag = DAG(
 def run_script(script_path):
     os.system(f'python {script_path}')
 
+# test: Transform Data
+test1 = BashOperator(
+    task_id='test1',
+    bash_command=f'cd /opt/airflow/scripts/data_ingestion && python store_data.py',
+    dag=dag,
+)
+
 # Task 1: Ingest Data
 ingest_data = PythonOperator(
     task_id='ingest_data',
@@ -39,19 +47,5 @@ ingest_data = PythonOperator(
     dag=dag,
 )
 
-# Task 2: Transform Data
-transform_data = BashOperator(
-    task_id='transform_data',
-    bash_command=DBT_RUN_COMMAND,
-    dag=dag,
-)
-
-# Task 3: Visualize Data
-visualize_data = BashOperator(
-    task_id='visualize_data',
-    bash_command=f'python {DATA_VISUALIZATION_SCRIPT}',  # Directly use the command as a string
-    dag=dag,
-)
-
 # Setting task dependencies
-ingest_data >> transform_data >> visualize_data
+ingest_data  

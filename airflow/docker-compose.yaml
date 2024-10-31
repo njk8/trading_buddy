@@ -28,9 +28,10 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags  # Mount your Airflow DAGs
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs  # Airflow logs
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins  # Any Airflow plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/config/dbt/profiles.yml:/root/.dbt/profiles.yml
     - ${AIRFLOW_PROJ_DIR:-../scripts}:/opt/airflow/scripts
     - ${AIRFLOW_PROJ_DIR:-../transformations}:/opt/airflow/transformations
-    - .data/processed:/opt/airflow/data  # data
+    - ${AIRFLOW_PROJ_DIR:-../data/processed}:/opt/airflow/data  # data
     - ./your_data_pipeline:/opt/airflow/data_pipeline  # Your Python scripts, data files, and configs
   user: "root"
   depends_on:
@@ -70,7 +71,20 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
-    command: ["conda", "run", "-n", "trade", "airflow", "webserver"]
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        conda env list
+        source /opt/conda/etc/profile.d/conda.sh  
+        conda activate trade || exit 1
+        # List environments for debugging
+        conda env list
+        # List installed packages in the trade environment for debugging
+        #conda list
+        # Initialize the Airflow database
+        conda run -n trade airflow webserver
+    #command: ["conda", "run", "-n", "trade", "airflow", "webserver"]
     ports:
       - "8080:8080"
       - "8793:8793"
@@ -89,7 +103,20 @@ services:
 
   airflow-scheduler:
     <<: *airflow-common
-    command: ["conda", "run", "-n", "trade", "airflow", "scheduler"]
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        conda env list
+        source /opt/conda/etc/profile.d/conda.sh  
+        conda activate trade || exit 1
+        # List environments for debugging
+        conda env list
+        # List installed packages in the trade environment for debugging
+        #conda list
+        # Initialize the Airflow database
+        conda run -n trade airflow scheduler
+    #command: ["conda", "run", "-n", "trade", "airflow", "scheduler"]
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -104,7 +131,21 @@ services:
 
   airflow-worker:
     <<: *airflow-common
-    command: ["conda", "run", "-n", "trade", "airflow", "celery", "worker"]
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        conda env list
+        source /opt/conda/etc/profile.d/conda.sh  
+        conda activate trade || exit 1
+        # List environments for debugging
+        conda env list
+        # List installed packages in the trade environment for debugging
+        #conda list
+        #pip install apache-airflow-providers-celery
+        # Initialize
+        conda run -n trade airflow celery worker
+    #command: ["conda", "run", "-n", "trade", "airflow", "celery", "worker"]
     mem_limit: 2g  # set a memory limit to 2GB
     mem_reservation: 1g  # ensure at least 1GB is reserved
     healthcheck:

@@ -1,0 +1,11 @@
+sqlite:
+  target: dev
+  outputs:
+    dev:
+      type: sqlite
+      threads: 1
+      database: 'C:/Users/91940/Documents/Trade_buddy/data/processed/stock_data.db' # Adjust the path to point to your SQLite database
+      schema: main
+      schema_directory: 'C:/Users/91940/Documents/Trade_buddy/data/processed/'
+      schemas_and_paths:
+        main: 'C:/Users/91940/Documents/Trade_buddy/data/processed/stock_data.db'

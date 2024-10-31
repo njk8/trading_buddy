@@ -6,9 +6,10 @@ import os
 
 # Define the base directory for paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+print(BASE_DIR)
 DATA_INGESTION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_ingestion/store_data.py')
 DATA_VISUALIZATION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_visualization/visualize_data.py')
-DBT_RUN_COMMAND = "cd ../transformations && dbt run --select stock_data_transformed"
+DBT_RUN_COMMAND = "cd /opt/airflow/transformations && dbt run --select stock_data_transformed"
 
 # Default arguments for the DAG
 default_args = {
@@ -30,7 +31,7 @@ dag = DAG(
 # test: Transform Data
 test1 = BashOperator(
     task_id='test1',
-    bash_command='ls -l',
+    bash_command=f'cd /opt/airflow/transformations && ls -l',
     dag=dag,
 )
 # Task 2: Transform Data
