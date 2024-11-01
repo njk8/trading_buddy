@@ -3,11 +3,12 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 import os
+import subprocess
+
 
 # Define the base directory for paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-print(BASE_DIR)
-DATA_INGESTION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_ingestion/store_data.py')
+DATA_INGESTION_SCRIPT = os.path.join('', '/opt/airflow/scripts/data_ingestion/store_data.py')
 DATA_VISUALIZATION_SCRIPT = os.path.join(BASE_DIR, '../scripts/data_visualization/visualize_data.py')
 DBT_RUN_COMMAND = "cd ../transformations && dbt run --select stock_data_transformed"
 
@@ -28,10 +29,6 @@ dag = DAG(
     schedule_interval='@daily',  # Set your desired schedule
 )
 
-# Function to run Python scripts
-def run_script(script_path):
-    os.system(f'python {script_path}')
-
 # test: Transform Data
 test1 = BashOperator(
     task_id='test1',
@@ -39,13 +36,20 @@ test1 = BashOperator(
     dag=dag,
 )
 
+# Updated function to run Python scripts with better error handling
+def run_script(script_path):
+    try:
+        subprocess.run(['python', script_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error running script: {e}")
+
 # Task 1: Ingest Data
 ingest_data = PythonOperator(
     task_id='ingest_data',
     python_callable=run_script,
-    op_kwargs={'script_path': DATA_INGESTION_SCRIPT},  # Pass the script path as an argument
+    op_kwargs={'script_path': '/opt/airflow/scripts/data_ingestion/store_data.py'},  # Direct path
     dag=dag,
 )
 
 # Setting task dependencies
-ingest_data  
+ingest_data
