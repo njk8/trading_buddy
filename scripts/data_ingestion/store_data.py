@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 print(BASE_DIR)
 print(f"BASE_DIR path: {BASE_DIR}")
-DATABASE_PATH = os.path.join('', '../../data/stock_data.db')
+DATABASE_PATH = os.path.join('', '../../data/processed/stock_data.db')
 print(f"Database path: {DATABASE_PATH}")
 SQL_PATH = os.path.join(BASE_DIR, 'create_tables.sql')
 

@@ -4,7 +4,7 @@ sqlite:
     dev:
       type: sqlite
       threads: 1
-      database: '/opt/airflow/data/stock_data.db' # Adjust the path to point to your SQLite database
+      database: '/opt/airflow/data/processed/stock_data.db' # Adjust the path to point to your SQLite database
       schema: main
       schema_directory: '/opt/airflow/data/'
       schemas_and_paths:

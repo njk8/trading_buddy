@@ -31,7 +31,8 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/config/dbt/profiles.yml:/root/.dbt/profiles.yml
     - ${AIRFLOW_PROJ_DIR:-../scripts}:/opt/airflow/scripts
     - ${AIRFLOW_PROJ_DIR:-../transformations}:/opt/airflow/transformations
-    - ${AIRFLOW_PROJ_DIR:-../data/processed}:/opt/airflow/data  # data
+    - ${AIRFLOW_PROJ_DIR:-../data}:/opt/airflow/data  # data
+    
     - ./your_data_pipeline:/opt/airflow/data_pipeline  # Your Python scripts, data files, and configs
   user: "root"
   depends_on:
