@@ -18,4 +18,4 @@ select
     close_price,
     volume
 from stock_data_source 
-where date_time >= date('now', '-7 days')  -- Example: last 7 days;
+where date_time >= date('now', '-60 days')  -- Example: last 60 days;
