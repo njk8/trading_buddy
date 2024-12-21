@@ -31,7 +31,7 @@ def fetch_stock_data(ticker):
     conn = sqlite3.connect(DB_PATH)
     query = """
         SELECT date_time, close_price
-        FROM stock_data_transformed
+        FROM exclude_weekend_data
         WHERE ticker = ?
         ORDER BY date_time ASC
     """
@@ -48,7 +48,7 @@ def fetch_stock_data(ticker):
     return data
 
 # Train-test split
-def train_test_split(data, test_size=0.2):
+def train_test_split(data, test_size=0.1):
     split_idx = int(len(data) * (1 - test_size))
     train, test = data.iloc[:split_idx], data.iloc[split_idx:]
     print(len(data),len(test))
@@ -58,7 +58,7 @@ def train_test_split(data, test_size=0.2):
     return train, test
 
 # Model training and prediction
-def train_and_predict(train, test, p=2, d=1, q=10):
+def train_and_predict(train, test, p=5, d=1, q=10):
     # Train ARIMA model
     model = ARIMA(train, order=(p, d, q))
     fitted_model = model.fit()
@@ -80,7 +80,9 @@ def train_and_predict(train, test, p=2, d=1, q=10):
     print(f"Test Root Mean Squared Percentage Error (RMSPE): {rmspe:.2f}%")
 
     # Future forecast
-    future_steps = 2  # Define steps for future prediction
+    future_steps = 5
+    
+      # Define steps for future prediction
     future_pred = fitted_model.forecast(steps=future_steps)
 
     return test_pred, future_pred, mse, mae, mape, rmspe
@@ -186,5 +188,3 @@ if __name__ == "__main__":
         
         print("\nRAG Response:")
         print(rag_response)
-
-

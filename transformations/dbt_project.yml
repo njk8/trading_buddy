@@ -11,4 +11,8 @@ clean-targets:
 
 models:
   transformations:
-    +materialized: view  # Can be 'view', 'table', or 'incremental'
+    +materialized: view  # Default materialization for all models
+    stock_data_transformed:
+      +materialized: view
+    exclude_weekend_data:
+      +materialized: view

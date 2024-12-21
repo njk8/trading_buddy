@@ -45,7 +45,7 @@ def insert_stock_data(conn, stock_data):
 def fetch_and_store_data(ticker):
     """ Fetch stock data from Yahoo Finance and store it in the database """
     stock = yf.Ticker(ticker)
-    hist = stock.history(period="1d", interval="1m")  # Fetch real-time minute-by-minute data
+    hist = stock.history(period="8d", interval="1m")  # Fetch real-time minute-by-minute data
     
     # Prepare data for insertion into the database
     stock_data = [

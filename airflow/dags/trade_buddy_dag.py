@@ -18,7 +18,7 @@ dag = DAG(
     'trade_buddy_dag',
     default_args=default_args,
     description='A simple DAG for the Trade Buddy project',
-    schedule_interval='@daily',  # Set your desired schedule
+    schedule_interval='@weekly',  # Set your desired schedule
 )
 
 # Function to run Python scripts
@@ -35,7 +35,7 @@ ingest_data = BashOperator(
 # Task 2: Transform Data
 transform_data = BashOperator(
     task_id='transform_data',
-    bash_command=f'cd /opt/airflow/transformations && dbt run --select stock_data_transformed',
+    bash_command=f'cd /opt/airflow/transformations && dbt run --select exclude_weekend_data',
     dag=dag,
 )
 
