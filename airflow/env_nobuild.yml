@@ -110,7 +110,6 @@ dependencies:
   - webencodings=0.5.1
   - wheel=0.44.0
   - xz=5.4.6
-  - yfinance=0.2.54
   - zeromq=4.3.5
   - zlib=1.2.13
   - zstd=1.5.5
@@ -261,4 +260,5 @@ dependencies:
     - wtforms==3.1.2
     - yarl==1.15.2
     - zipp==3.20.2
+    - yfinance==0.2.54
 prefix: C:\Users\91940\anaconda3\envs\trade
