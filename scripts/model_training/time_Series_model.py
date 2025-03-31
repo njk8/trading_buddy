@@ -12,40 +12,53 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
+import requests
+from bs4 import BeautifulSoup
+from pathlib import Path
 
+# Load environment variables early
+load_dotenv()
 
-# Construct the path to the database
-BASE_DIR = r'C:\Users\91940\Documents\Trade_buddy\scripts'
-DB_PATH = os.path.join(BASE_DIR, 'C:/Users/91940/Documents/Trade_buddy/data/processed/stock_data.db')
+# Use pathlib for cross-platform path handling
+# Get the project root directory (assuming this script is in scripts/model_training)
+PROJECT_ROOT = Path(__file__).parent.parent.parent.absolute()
 
-# Normalize the path to handle '..'
-DB_PATH = os.path.normpath(DB_PATH)
+# Set up paths relative to the project root
+DB_PATH = os.getenv('DB_PATH', str(PROJECT_ROOT / 'data/processed/stock_data.db'))
+PLOT_PATH = os.getenv('PLOT_PATH', str(PROJECT_ROOT / 'data/model_outputs/'))
 
-TICKER = 'AAPL'
-PLOT_PATH = 'C:/Users/91940/Documents/Trade_buddy/data/model_outputs/'
+# Make sure the plot directory exists
+os.makedirs(PLOT_PATH, exist_ok=True)
+
+# Default ticker that can be overridden via environment
+TICKER = os.getenv('TICKER', 'AAPL')
 
 # Fetch stock data
 def fetch_stock_data(ticker):
     # Print to confirm the correct path
     print("Database Path:", DB_PATH)
-    conn = sqlite3.connect(DB_PATH)
-    query = """
-        SELECT date_time, close_price
-        FROM exclude_weekend_data
-        WHERE ticker = ?
-        ORDER BY date_time ASC
-    """
-    data = pd.read_sql(query, conn, params=(ticker,))
-    conn.close()
-    
-    # Convert date_time to datetime and set as index
-    data['date_time'] = pd.to_datetime(data['date_time'])
-    data.set_index('date_time', inplace=True)
-    
-    data = data[~data.index.duplicated(keep='first')]
-    data = data.asfreq('min', method='ffill')  # 'T' for minute-level frequency
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        query = """
+            SELECT date_time, close_price
+            FROM exclude_weekend_data
+            WHERE ticker = ?
+            ORDER BY date_time ASC
+        """
+        data = pd.read_sql(query, conn, params=(ticker,))
+        conn.close()
+        
+        # Convert date_time to datetime and set as index
+        data['date_time'] = pd.to_datetime(data['date_time'])
+        data.set_index('date_time', inplace=True)
+        
+        data = data[~data.index.duplicated(keep='first')]
+        data = data.asfreq('min', method='ffill')  # 'T' for minute-level frequency
 
-    return data
+        return data
+    except Exception as e:
+        print(f"Error fetching stock data: {e}")
+        return pd.DataFrame()
 
 # Train-test split
 def train_test_split(data, test_size=0.1):
@@ -130,16 +143,15 @@ def plot_predictions(train, test, test_pred, future_pred):
     plt.title(f"{TICKER} Stock Price Prediction")
     plt.legend()
     plt.tight_layout()
-    file_path = f"{PLOT_PATH}{TICKER}_stock_prediction_{datetime.now().strftime('%Y%m%d')}.png"
-    plt.savefig(file_path)
+    
+    # Create full path with pathlib
+    file_path = Path(PLOT_PATH) / f"{TICKER}_stock_prediction_{datetime.now().strftime('%Y%m%d')}.png"
+    plt.savefig(str(file_path))
     plt.show()
     print(f"Plot saved at {file_path}")
 
 # Module for RAG invocation
 def invoke_rag_prompt(context: str, question: str):
-    # Load variables from the .env file
-    load_dotenv()
-
     # Get the API key
     api_key = os.getenv("GROQ_API_KEY")
     if api_key is None:
@@ -156,8 +168,39 @@ def invoke_rag_prompt(context: str, question: str):
     rag_chain = rag_prompt | chat_model | StrOutputParser()
     return rag_chain.invoke({"context": context, "question": question})
 
+def fetch_pe_ratio(ticker):
+    """Fetches the P/E ratio for a given ticker symbol from Yahoo Finance."""
+    try:
+        url = f"https://finance.yahoo.com/quote/{ticker}"
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        response = requests.get(url, headers=headers)
+        
+        if response.status_code == 200:
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Look for the PE ratio in the statistics table
+            pe_elements = soup.find_all('td', string=lambda text: text and 'PE Ratio' in text)
+            if pe_elements:
+                pe_value = pe_elements[0].find_next_sibling('td').text
+                return pe_value
+            
+            # Alternative method if the above doesn't work
+            pe_data = soup.find('span', string=lambda text: text and 'PE Ratio' in text)
+            if pe_data:
+                pe_value = pe_data.find_next('span').text
+                print('Found PE Ratio:',pe_value)
+                return pe_value
+                
+        return "N/A"  # Return N/A if PE ratio not found
+    except Exception as e:
+        print(f"Error fetching P/E ratio: {e}")
+        return "N/A"
+
 def generate_context(mse, mae, mape, rmspe):
     """Generates the context string for the RAG model based on metrics."""
+    # Fetch the current P/E ratio for Apple
+    pe_ratio = fetch_pe_ratio(TICKER)
+    
     return f"""
     Stock Analysis Report:
     - Model: ARIMA
@@ -165,16 +208,24 @@ def generate_context(mse, mae, mape, rmspe):
     - MAE: {mae:.2f}
     - MAPE: {mape:.2f}%
     - RMSPE: {rmspe:.2f}%
+    - Current P/E Ratio: {pe_ratio}
+    - Market Context: Apple Inc. (AAPL) is a major technology company that designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.
     """
 
 
 # Main execution
 if __name__ == "__main__":
+    print(f"Using ticker: {TICKER}")
+    print(f"Database path: {DB_PATH}")
+    print(f"Plot output path: {PLOT_PATH}")
+    
     stock_data = fetch_stock_data(TICKER)
 
+    if stock_data.empty:
+        print("Failed to fetch stock data. Please check your database connection and path.")
     # Ensure there are enough data points
-    if len(stock_data) < 20:  # Arbitrary threshold to ensure meaningful analysis
-        print("Not enough data points for training and testing,",{len(stock_data)})
+    elif len(stock_data) < 20:  # Arbitrary threshold to ensure meaningful analysis
+        print("Not enough data points for training and testing:", len(stock_data))
     else:
         train, test = train_test_split(stock_data['close_price'])
         test_pred, future_pred, mse, mae, mape, rmspe = train_and_predict(train, test)
